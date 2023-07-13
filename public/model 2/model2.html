@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sidebar/sidebar.css">
+    <link rel="stylesheet" href="./model2.css">
+    <link rel="stylesheet" href="./sidebar.js">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <title>FARM MANTRA •⁠‿⁠•</title>
+</head>
+
+<body>
+    <div class="sidebar close">
+        
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">
+                    <i class="fi fi-sr-flame"></i>
+                    <span class="link_name">Primeum</span>
+                </a>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="/home">Home</a></span>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fi fi-sr-navigation"></i>
+                    <span class="link_name">Next</span>
+                </a>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="/model1">MODEL 1</a></span>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fi fi-sr-wheat"></i>
+                    <span class="link_name">Wheat</span>
+                </a>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="#">MODEL 2</a></span>
+                </div>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fi fi-sr-shop"></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class="fi fi-sr-caret-down arrow"></i>
+                </div>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="#">MODEL 3</a></span>
+                </div>
+            </li>
+
+            <!-- <li>
+                <a href="#">
+                    <i class="fi fi-sr-forward"></i>
+                    <span class="link_name">1st model</span>
+                </a>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="#">1st model</a></span>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fi fi-sr-forward"></i>
+                    <span class="link_name">2st model</span>
+                </a>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="#">2st model</a></span>
+                </div>
+            </li>
+
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class="fi fi-sr-bell"></i>
+                        <span class="link_name">Notification</span>
+                    </a>
+                    <i class="fi fi-sr-caret-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <span><a class="link_name" href="#">Notification</a></span>
+                    <span><a href="#">Facebook</a></span>
+                    <span><a href="#">Youtube</a></span>
+                    <span><a href="#">Dribbble</a></span>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fi fi-sr-forward"></i>
+                    <span class="link_name">Favorite</span>
+                </a>
+                <div class="sub-menu blank">
+                    <span><a class="link_name" href="#">Favorite</a></span>
+                </div>
+            </li> -->
+            
+        </ul>
+
+       
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <span class="logo"><img src="../sidebar/farm_mantra_logo.png"  /></span>
+            
+        </div>
+        
+        <div class="login">
+            <h1>Government expected msp</h1>
+            
+            <form action="{% url 'predict:predicter' %}"method="post">
+        
+            
+            
+            <select type="text" value="" name="ls" class="select" id="ls" required>
+                <option>crop</option>
+                <option>Rice</option>
+                <option>Wheat</option>
+                <option>Coarse Cereals</option>
+                <option>Pulses</option>
+                <option>Vegetables</option>
+                <option>Fruits</option>
+                <option>Milk</option>
+                <option>Eggs, Fish and Meat</option>
+                <option>Oilseeds</option>
+                <option>Sugarcane </option>
+                <option>Fibers</option>
+                <option>All Agriculture</option>
+            </select>
+            <input type="number" name="year" placeholder="year" required="year" />
+            
+      
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict msp</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
